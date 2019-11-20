@@ -46,8 +46,6 @@ public:
         n1      -- refraction index of the incident medium
         n2      -- refraction index of the reflecting medium
         theta_i -- initial incidence angle **respect to the normal**(IN RADIANS)
-
-        This function has been checked to work exactly as stokes.py
     */
     double theta_t = asin(n1/n2 * sin(theta_i));
 
@@ -74,8 +72,6 @@ public:
         n1      -- refraction index of the incident medium
         n2      -- refraction index of the reflecting medium
         theta_i -- initial incidence angle **respect to the normal**(IN RADIANS)
-
-        This function has been checked to work exactly as stokes.py
     */
     double theta_t = asin(n1/n2 * sin(theta_i));
 
