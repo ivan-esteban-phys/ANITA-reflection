@@ -100,13 +100,17 @@ int main(int argc, char* argv[]){
     return -1;
   }
 
+  double P = atof(argv[1]);
+  if(P<0 || P>1){
+    std::cerr<<"The incident degree of polarization [argument of the program] must be between 0 and 1"<<std::endl;
+    return -1;
+  } 
+
   const char* fname = ("Output_" + std::string(argv[1]) + ".dat").c_str();
   FILE * ofile = fopen(fname, "w");
   std::mt19937_64 generator;
 
   Stokes st(1, 0);
-  
-  double P = atof(argv[1]);
 
   unsigned long int N_evts[N_sineps][N_psi_f][N_P_f];
   /* N_evts[i][j][k] is the expected number of events for
