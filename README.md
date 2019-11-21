@@ -8,7 +8,7 @@ If we have an incident flux of (partially) linearly polarized radio pulses phi(s
 
 this repository containts a simple C++ code that computes the observed flux phi(sin(epsilon), psi<sub>f</sub>, P<sub>f</sub>). Here, psi<sub>f</sub> and P<sub>f</sub> are the observed polarization angle and degree of polarization taking into account reflection for epsilon<0. The program requires no external library. It takes as a command-line argument the incident degree polarization of radio waves (P<sub>i</sub>), and creates a file named "Output_P<sub>i</sub>.dat" with the following columns:
 
-sin(epsilon) psi<sub>f</sub P<sub>f</sub> phi(sin(epsilon), psi<sub>f</sub>, P<sub>f</sub>)
+sin(epsilon) psi<sub>f</sub> P<sub>f</sub> phi(sin(epsilon), psi<sub>f</sub>, P<sub>f</sub>)
 
 An example compilation command would be
 <code> g++ -std=c++11 reflect.cpp -o reflect.out </code>
